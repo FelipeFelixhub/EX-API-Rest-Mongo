@@ -10,7 +10,7 @@ const contatoRouter = require('./routes/contatoRoutes');
 app.use('/contatos', contatoRouter);
 
 app.use((req, res) =>{
-  res.statusCode = 400;
+  res.statusCode = 404;
   res.send({
     erro: "123",
     message: "Rota invalida"
